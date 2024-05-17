@@ -1,0 +1,57 @@
+.footer .top {
+    background-color: var(--footer-yellow);
+    padding: 10rem 9%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.footer .top .links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+}
+
+.footer .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 0;
+    background-color: var(--deep-yellow);
+}
+
+.footer .top .content p {
+    color: var(--grey);
+    margin-top: 2rem;
+    width: 90%;
+}
+
+.footer .top .link h4 {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+}
+
+.footer .top .link a {
+    display: inline-block;
+    color: var(--grey);
+    margin-bottom: 1rem;
+    font-size: 16px
+}
+
+.footer .top .link span {
+    color: var(--grey);
+    font-size: 16px
+}
+
+.footer .top .link a {
+    display: block;
+}
+
+.footer .top .link div {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.footer .top .link div img {
+    margin-right: 1rem;
+}

@@ -1,0 +1,130 @@
+.home {
+    display: flex;
+    margin-top: 8rem;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.content {
+    flex: 1;
+}
+
+.image {
+    flex: 1;
+}
+
+.home img {
+    width: 100%;
+}
+
+.home .content h1 {
+    font-size: 3.6rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.home .content p {
+    color: var(--grey);
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.home .content .home-btn {
+    display: inline-block;
+    color: var(--white);
+    font-weight: 500;
+    border-radius: 0.5rem;
+    background-color: var(--yellow);
+    padding: 1rem 1.5rem;
+    margin-top: 1rem;
+    transition: var(--transition);
+}
+
+.home .content .home-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--box-shadow);
+}
+
+@media (max-width: 999px) {
+    .home {
+        margin-top: 10rem;
+    }
+
+    .home .content h1 {
+        font-size: 2.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .home {
+        margin-top: 13rem;
+    }
+
+    .home .content h1 {
+        font-size: 3.3rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .home .content p {
+        font-size: inherit;
+        margin-bottom: 1.5rem;
+    }
+
+    .home {
+        flex-direction: column;
+    }
+
+    .home .image {
+        max-width: 40rem;
+        margin: 0 auto;
+    }
+}
+
+
+
+/* ------------------------------CSS for Hamburger--------------------------------------- */
+/* .home span{
+    width: 65px;
+    height: 8px;
+    background-color: rgb(53, 58, 58);
+    border-radius: 8px;
+    transition: all 1s ease
+}
+.home{
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    margin-top: 9rem;
+    align-items: center;
+    
+}
+.home input{
+    width: 70px;
+    display: flex;
+    height: 50px;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 11;
+}
+#span11 {
+    transform-origin: 10px 10px;
+  }
+  
+  #span33 {
+    transform-origin: bottom right;
+  }
+
+.home input:checked ~ #span11 {
+    transform: rotate(45deg) translate(-3px, -6px);
+}
+
+.home input:checked ~ #span22 {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.home input:checked ~ #span33 {
+    transform: rotate(45deg) translate(4px);
+    opacity: 0;
+} */

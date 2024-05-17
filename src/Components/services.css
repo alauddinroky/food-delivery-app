@@ -1,0 +1,101 @@
+.services {
+    padding: 70px 10%;
+    background-color: var(--bg-yellow);
+}
+
+.services .top {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.services .top h2 {
+    font-size: 3.5rem;
+    margin-bottom: 1.3rem;
+}
+
+.services .top p {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 18px;
+    text-align: center;
+    color: var(---gray)
+}
+
+
+/* .bottom {
+    display: flex;
+    padding: 2rem 0;
+    gap: 5rem;
+}
+
+.bottom .box {
+    flex: 1;
+} */
+.services .bottom {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    gap: 3rem;
+}
+
+.bottom .box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 3rem 2rem;
+    border-radius: 0.5rem;
+}
+
+.bottom .box:hover {
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+}
+
+.box img {
+    width: 60px;
+    height: 60px;
+}
+
+.box h4 {
+    font-size: 24px;
+    margin: 1rem 0;
+    font-weight: 700;
+    line-height: 27px;
+}
+
+.box p {
+    font-size: 16px;
+    color: var(---gray);
+    margin-bottom: 1.4rem;
+    line-height: 24px;
+}
+
+.box a {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+
+}
+
+.bottom a img {
+    width: 5px;
+    height: 10px;
+}
+
+@media (max-width: 768px) {
+    .services .top {
+        margin-bottom: 2.5rem;
+    }
+
+    .services .top p {
+        width: 100%;
+    }
+
+    .services .top h2 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .services .bottom .box {
+        padding: 1.5rem;
+    }
+}
